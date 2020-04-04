@@ -17,7 +17,6 @@ export class CovidExternalApiService {
       .pipe(retry(1),
         catchError(this.errorHandler)
       );
-
   }
 
   errorHandler(error: HttpErrorResponse) {

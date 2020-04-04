@@ -13,5 +13,4 @@ export class CovidHospitalGridComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }
