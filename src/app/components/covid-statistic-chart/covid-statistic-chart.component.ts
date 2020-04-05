@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, OnChanges } from '@angular/core';
 import * as Chart from 'chart.js'
+import 'chartjs-plugin-labels';
 
 @Component({
   selector: 'app-covid-statistic-chart',
@@ -46,6 +47,17 @@ export class CovidStatisticChartComponent implements OnChanges {
             fontColor: '#FFFFFF',
             padding: 8,
             usePointStyle: true
+          }
+        },
+        plugins: {
+          labels: {
+            render: 'percentage',
+            fontColor: '#FFFFFF',
+            fontSize: 10,
+            precision: 1,
+            overlap: true,
+            position: 'border',
+            textShadow: true
           }
         }
       }
