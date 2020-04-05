@@ -8,7 +8,8 @@ import { CovidStatisticCardComponent } from './components/covid-statistic-card/c
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CovidDashboardComponent } from './components/covid-dashboard/covid-dashboard.component';
 import { HttpClientModule} from '@angular/common/http';
-import { CovidHospitalGridComponent } from './components/covid-hospital-grid/covid-hospital-grid.component'
+import { CovidHospitalGridComponent } from './components/covid-hospital-grid/covid-hospital-grid.component';
+import { CovidStatisticChartComponent } from './components/covid-statistic-chart/covid-statistic-chart.component'
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CovidHospitalGridComponent } from './components/covid-hospital-grid/cov
     CovidStatisticsComponent,
     CovidStatisticCardComponent,
     CovidDashboardComponent,
-    CovidHospitalGridComponent
+    CovidHospitalGridComponent,
+    CovidStatisticChartComponent
   ],
   imports: [
     BrowserModule,

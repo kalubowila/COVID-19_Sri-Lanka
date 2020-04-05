@@ -1,0 +1,17 @@
+<div>
+    <div class="card card-chart">
+        <div class="card-header card-header-grid">
+            <canvas id="covidPieChart"></canvas>
+        </div>
+        <div class="card-body">
+            <h4 class="card-title">COVID-19: Breakdown of Total Active Cases</h4>
+        </div>
+        <div class="card-footer">
+            <div class="stats">
+                <i class="material-icons">date_range</i> Last 24 Hours
+                <br>New Deaths: {{cData?.local_new_deaths || 0}}
+                <br>New Cases: {{cData?.local_new_cases || 0}}
+            </div>
+        </div>
+    </div>
+</div>

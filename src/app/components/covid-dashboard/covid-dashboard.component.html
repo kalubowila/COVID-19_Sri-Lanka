@@ -1,6 +1,14 @@
 <div class="main-content">
     <div class="container-fluid">
+        <div class="card card-header card-header-grid" style="margin-top: 15px;">
+            <h4 class="card-title"><strong>COVID-19:</strong> Live Situation - Sri Lanka</h4>
+        </div>
+
         <app-covid-statistics [cData]="cData"></app-covid-statistics>
-        <app-covid-hospital-grid [cHospitalData]="cHospitalData"></app-covid-hospital-grid>
+
+        <div class="row">
+            <app-covid-statistic-chart [cData]="cData" class="col-lg-4 col-md-8"></app-covid-statistic-chart>
+            <app-covid-hospital-grid [cHospitalData]="cHospitalData" class="col-lg-8 col-md-16"></app-covid-hospital-grid>
+        </div>
     </div>
 </div>
