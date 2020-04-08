@@ -11,6 +11,7 @@ import { HttpClientModule} from '@angular/common/http';
 import { CovidHospitalGridComponent } from './components/covid-hospital-grid/covid-hospital-grid.component';
 import { CovidStatisticChartComponent } from './components/covid-statistic-chart/covid-statistic-chart.component';
 import { FooterComponent } from './components/shared/footer/footer.component'
+import { NgxPaginationModule } from 'ngx-pagination'
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FooterComponent } from './components/shared/footer/footer.component'
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

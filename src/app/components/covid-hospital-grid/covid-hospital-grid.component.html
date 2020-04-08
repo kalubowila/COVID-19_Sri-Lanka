@@ -13,7 +13,10 @@
                     <th>Total</th>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let hospital of hospitalData">
+                    <tr *ngFor="let hospital of hospitalData | paginate: { id: 'listing_pagination',
+                                    itemsPerPage: 6,
+                                    currentPage: page,
+                                    totalItems: totalRecords }">
                         <td> {{hospital.hospital.name}}
                             <br>{{hospital.hospital.name_si}}
                             <br>{{hospital.hospital.name_ta}}
@@ -24,6 +27,9 @@
                     </tr>
                 </tbody>
             </table>
+            <div>
+                <pagination-controls id="listing_pagination" maxSize="5" directionLinks="true" (pageChange)="page = $event"></pagination-controls>
+            </div>
         </div>
     </div>
 </div>
