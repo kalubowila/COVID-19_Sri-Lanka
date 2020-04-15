@@ -16,5 +16,4 @@ export class CovidHospitalGridComponent implements OnChanges {
   ngOnChanges(changes: SimpleChanges): void {
     this.totalRecords = this.hospitalData?.length;
   }
-
 }
